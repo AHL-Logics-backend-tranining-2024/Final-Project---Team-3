@@ -26,6 +26,7 @@ class UserService:
         user.created_at = datetime.now()
         user.updated_at = None
         self.users[user_id] = user
+    
         return user
 
     def get_user(self, user_id: str) -> Optional[User]:
